@@ -6,6 +6,20 @@ const cors = require('cors');
 //initialising express app
 const app = express();
 
+//linking to database
+const db = require('./models');
+db.mongoose.connect(db.url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => {
+    console.log('Connected to database!');
+})
+.catch(err => {
+    console.log('Cannot connect to database!',err);
+    process.exit();
+})
+
 //setting cors option
 var corsOptions = {
     origin: 'http://localhost:8081'
