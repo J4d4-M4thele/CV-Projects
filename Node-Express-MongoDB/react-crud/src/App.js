@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div>
+        {/* navigation bar */}
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <a href="/tutorials" className="navbar-brand">
             bezKoder
@@ -22,7 +25,7 @@ class App extends Component {
             </li>
           </div>
         </nav>
-
+        {/* routes which link on navbar  goes to */}
         <div className="container mt-3">
           <Routes>
             <Route path="/" element={<TutorialsList />} />
