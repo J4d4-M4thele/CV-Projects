@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //route
 app.get('/', (req, res) => {
-  res.json({message: "Welcome to my application."})
+  res.json({message: "Welcome to bezkoder application."})
 });
 
 //setting port and print message to terminal
