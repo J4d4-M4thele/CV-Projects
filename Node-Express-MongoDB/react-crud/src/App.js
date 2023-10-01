@@ -3,6 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
+
+import AddTutorial from "./components/add-tutorial.component";
+import Tutorial from "./components/tutorial.component";
+import TutorialsList from "./components/tutorials-list.component";
+
 class App extends Component {
   render() {
     return (
