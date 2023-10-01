@@ -52,7 +52,7 @@ class Tutorial extends Component {
   }
 
   getTutorial(id) {
-    TutorialDataService.get(id)
+    tutorialDataService.get(id)
       .then(response => {
         this.setState({
           currentTutorial: response.data

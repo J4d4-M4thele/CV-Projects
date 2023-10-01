@@ -33,7 +33,7 @@ export default class TutorialsList extends Component {
   }
 
   retrieveTutorials() {
-    TutorialDataService.getAll()
+    tutorialDataService.getAll()
       .then(response => {
         this.setState({
           tutorials: response.data
