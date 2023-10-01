@@ -2,12 +2,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const mongoose = require('mongoose'); 
 
 //initialising express app
 const app = express();
 
 //linking to database
-const db = require('./models');
+const db = require('./models/index');
+mongoose.set('strictQuery', true);
 db.mongoose.connect(db.url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
