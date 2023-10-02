@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import tutorialDataService from "../service/tutorial.service";
+import TutorialDataService from "../services/tutorial.service";
 import { withRouter } from '../common/with-router';
 
 class Tutorial extends Component {
@@ -52,7 +52,7 @@ class Tutorial extends Component {
   }
 
   getTutorial(id) {
-    tutorialDataService.get(id)
+    TutorialDataService.get(id)
       .then(response => {
         this.setState({
           currentTutorial: response.data
@@ -72,7 +72,7 @@ class Tutorial extends Component {
       published: status
     };
 
-    tutorialDataService.update(this.state.currentTutorial.id, data)
+    TutorialDataService.update(this.state.currentTutorial.id, data)
       .then(response => {
         this.setState(prevState => ({
           currentTutorial: {
@@ -88,7 +88,7 @@ class Tutorial extends Component {
   }
 
   updateTutorial() {
-    tutorialDataService.update(
+    TutorialDataService.update(
       this.state.currentTutorial.id,
       this.state.currentTutorial
     )
@@ -104,7 +104,7 @@ class Tutorial extends Component {
   }
 
   deleteTutorial() {    
-    tutorialDataService.delete(this.state.currentTutorial.id)
+    TutorialDataService.delete(this.state.currentTutorial.id)
       .then(response => {
         console.log(response.data);
         this.props.router.navigate('/tutorials');
