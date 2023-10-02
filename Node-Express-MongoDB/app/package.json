@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "node-express-mongodb",
   "version": "1.0.0",
   "description": "Node.js Restful CRUD API with Node.js, Express and MongoDB",
   "main": "server.js",
@@ -9,17 +9,15 @@
   "keywords": [
     "nodejs",
     "express",
-    "mongodb",
     "rest",
-    "api"
+    "api",
+    "mongodb"
   ],
-  "author": "Jada Mathele",
+  "author": "bezkoder",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongodb": "^6.1.0",
     "mongoose": "^6.11.1"
   }
 }
