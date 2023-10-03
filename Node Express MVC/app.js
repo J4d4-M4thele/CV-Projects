@@ -5,8 +5,8 @@ let app = new express();
 const PORT = 3000;
 //const MongoClient = require('mongodb').MongoClient
 //mongoose for people who contact the company
-// const mongoose = require('mongoose');
-// mongoose.connect('mongodb+srv://JadaMathele:kPfIAdYSqOfix3ap@cluster0.rm0hggx.mongodb.net/menu', { useNewUrlParser: true });
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://JadaMathele:kPfIAdYSqOfix3ap@cluster0.rm0hggx.mongodb.net/menu', { useNewUrlParser: true });
 
 const path = require("path");
 const bodyParser = require("body-parser");
