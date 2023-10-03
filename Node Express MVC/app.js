@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://JadaMathele:kPfIAdYSqOfix3ap@cluster0.rm0hggx.mo
 const path = require("path");
 const bodyParser = require("body-parser");
 const ejs = require('ejs');
-const bootstrap = require("./src/boostrap");
+//const bootstrap = require("./src/boostrap");
 //const { getMeals } = require('./src/models/mealModel');
 const contactController = require('./src/controllers/contactController.js');
 
