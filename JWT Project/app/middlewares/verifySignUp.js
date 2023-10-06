@@ -51,7 +51,7 @@ checkRolesExisted = (req, res, next) => {
 };  
 
 const verifySignUp = {
-    checkDuplicateUsernameOrEmail,
+  checkDuplicateUsernameOrEmail,
   checkRolesExisted
 }
 
