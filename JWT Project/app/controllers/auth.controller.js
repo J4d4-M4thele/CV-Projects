@@ -111,3 +111,13 @@ exports.signin = (req, res) => {
       });
     });
 };
+
+
+//{
+//     "username": "Jada",
+//     "email": "jadamaadimo.mathele@gmail.com",
+//     "password": "1234",
+//     "roles": [
+//         "user"
+//     ]
+// }
